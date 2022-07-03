@@ -1,12 +1,14 @@
 import { Facebook, Instagram, LinkedIn, Pinterest, Twitter, Room, MailOutline, Phone } from '@material-ui/icons'
 import React from 'react'
 import Styled from 'styled-components'
+import { mobile } from '../Responsive'
 
 
 
 const Container = Styled.div`
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    ${mobile({ flexDirection: 'column' })}
 `
 
 const Left = Styled.div`
@@ -41,6 +43,7 @@ const Social = Styled.div`
 const Center = Styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({ display: 'none' })}
 `
 
 const Title = Styled.h1`
@@ -63,6 +66,7 @@ const ListItems = Styled.li`
 const Right = Styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({ backgroundColor: '#fff8f8' })}
 `
 
 const Heading = Styled.h1`

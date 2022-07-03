@@ -1,5 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
+import { mobile } from '../Responsive'
 
 
 const Container = Styled.div`
@@ -10,6 +11,7 @@ const Container = Styled.div`
     align-items: center;
     justify-content: center;
     padding: 5px;
+    ${mobile({ fontSize: '10px', fontWeight: 'bold' })}
 `
 
 const Announcement = () => {
